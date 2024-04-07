@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+
+
+/*リセットCSS（sanitize.css）の読み込み
+---------------------------------------------------------------------------*/
+@import url("https://unpkg.com/sanitize.css");
+
+/*Google Fontsの読み込み
+---------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+/*Bootstrap Iconsの読み込み
+---------------------------------------------------------------------------*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+
+/*lightbox.cssの読み込み
+---------------------------------------------------------------------------*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);
+
+/*slick.cssの読み込み
+---------------------------------------------------------------------------*/
+@import url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css");
+
+html,
+body {
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-size: 13px;
+    /*基準となるフォントサイズ。*/
+    overflow-x: hidden;
+}
+
+/*画面幅900px以上の追加指定*/
+@media screen and (min-width:900px) {
+
+    html,
+    body {
+        font-size: 16px;
+        /*基準となるフォントサイズ。*/
+    }
+
+}
+
+/*画面幅900px以上の追加指定ここまで*/
+
+body {
+    margin-top: 10px;
+    font-family: "Noto Serif JP", "Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    /*フォント種類*/
+    -webkit-text-size-adjust: none;
+    background: #fffaf0;
+    /*背景色*/
+    color: #777;
+    /*文字色*/
+    line-height: 2;
+    /*行間*/
+}
+
+/*リセット*/
+figure {
+    margin: 0;
+}
+
+dd {
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+/*table全般の設定*/
+table {
+    border-collapse: collapse;
+}
+
+/*画像全般の設定*/
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*videoタグ*/
+video {
+    max-width: 100%;
+}
+
+/*iframeタグ*/
+iframe {
+    width: 100%;
+}
+
+/*ul,olタグ*/
+ul,
+ol {
+    margin-bottom: 30px;
+}
+
+/*他*/
+section+section {
+    margin-top: 100px;
+}
+
+/*リンクテキスト全般の設定
+---------------------------------------------------------------------------*/
+a {
+    color: #777;
+    /*文字色*/
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+    /*マウスオン時に80%の透明度にする*/
+}
+
+
+/*container
+---------------------------------------------------------------------------*/
+#container {
+    margin: 0 auto;
+    max-width: 1800px;
+    /*サイトの最大幅*/
+}
+
+
+/*header（ロゴが入った最上段のブロック）
+---------------------------------------------------------------------------*/
+/*ヘッダーブロック*/
+.header {
+    position: fixed;
+    /* headerを追従にする */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fffaf0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*画面幅400px以下の追加指定*/
+@media screen and (max-width:400px) {
+}
+
+.header__inner {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/*画面幅400px以下の追加指定ここまで*/
+
+
+/*mainブロック
+---------------------------------------------------------------------------*/
+main {
+    margin-top: 50px;
+    margin: 20px;
+    /*ブロックの外にとるスペース*/
+}
+
+/*画面幅900px以上の追加指定*/
+@media screen and (min-width:900px) {
+
+    main {
+        margin: 100px;
+        /*ブロックの外にとるスペース*/
+    }
+
+}
+
+/*画面幅900px以上の追加指定ここまで*/
+
+/*h2タグ*/
+main h2 {
+    font-weight: normal;
+    /*太さを標準に*/
+    font-size: 2.0rem;
+    /*文字サイズを２倍に*/
+    letter-spacing: 0.2em;
+    /*文字間隔を広くとる*/
+    text-indent: 0.2em;
+    /*上の行のletter-spacingと同じ値をセットする*/
+    text-align: center;
+    /*テキストをセンタリング*/
+}
+
+/*h2タグ内のspanタグ。小文字部分。*/
+main h2 span {
+    display: block;
+    font-size: 0.5rem;
+    /*文字サイズを親要素の半分に*/
+    letter-spacing: 0.5em;
+    /*文字間隔の上書き*/
+    text-indent: 0.5em;
+    /*上の行のletter-spacingと同じ値をセットする*/
+}
+
+/*h3タグ*/
+main h3 {
+    font-size: 1.3rem;
+    /*文字サイズ*/
+}
+
+/*微調整*/
+p+h3,
+p+h2 {
+    margin-top: 2em;
+}
+
+#g_navi {
+    overflow-x: auto;
+}
+
+#g_navi ul {
+    margin: 0 auto;
+    padding: 0 3%;
+    width: 94%;
+    max-width: 960px;
+    list-style-type: none;
+}
+
+#g_navi ul li {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+
+#g_navi ul li:first-child::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 25%;
+    left: 0px;
+    width: 1px;
+    height: 50%;
+    background-color: #d6c6af;
+}
+
+#g_navi ul li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 25%;
+    right: 0px;
+    width: 1px;
+    height: 50%;
+    background-color: #d6c6af;
+}
+
+#g_navi ul li a {
+    display: block;
+    padding: 17px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* ハンバーガーボタンのデザイン */
+.drawer__button {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+    /* メニューを開いている時もクリックできるよう設定 */
+}
+
+/* ハンバーガーボタン内の線 */
+.drawer__button>span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 2px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.drawer__button>span:first-child {
+    transform: translate(-50%, calc(-50% - 0.5rem));
+    transition: transform 0.3s ease;
+}
+
+.drawer__button>span:nth-child(2) {
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+.drawer__button>span:last-child {
+    transform: translate(-50%, calc(-50% + 0.5rem));
+    transition: transform 0.3s ease;
+}
+
+/* 展開時のデザイン */
+.drawer__button.active>span:first-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.drawer__button.active>span:nth-child(2) {
+    opacity: 0;
+}
+
+.drawer__button.active>span:last-child {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* メニューのデザイン */
+.drawer__nav {
+    position: fixed;
+    /* 追従ヘッダーなどでも表示できるよう設定しておく */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.drawer__nav__inner {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    padding: 4rem 1.5rem 1rem;
+    margin: 0 0 0 auto;
+    overflow: scroll;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.drawer__nav__menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.drawer__nav__link {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border-bottom: solid 1px lightgray;
+}
+
+/* 展開時のデザイン */
+.drawer__nav.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.drawer__nav.active .drawer__nav__inner {
+    transform: translateX(0);
+}
+
+footer {
+    font-size: 0.7rem;
+    /*文字サイズ*/
+    text-align: center;
+    /*内容をセンタリング*/
+    background-color: #d6c6af;
+}
+
+/*リンクテキスト*/
+footer a {
+    text-decoration: none;
+}
+/* footer */
+#footer_top {
+    margin: 0;
+    padding: 1%;
+    padding-bottom: 0%;
+    /*ブロック内の余白*/
+}
+
+#footer_social_link li {
+    display: inline-block;
+    /*横並びにする*/
+    padding: 0 10px;
+    /*上下、左右への余白*/
+}
+
+#footer_menu {
+    margin: 0;
+    padding: 1%;
+    /*ブロック内の余白*/
+}
+
+/*メニュー１個あたり*/
+#menu_foot_nav li {
+    display: inline-block;
+    /*横並びにする*/
+    padding: 0 10px;
+    /*上下、左右への余白*/
+}
+
+/* その他 */
+.c {
+    text-align: center !important;
+}
+.ca {
+    text-align: center !important;
+    font-size: 25px;
+}
