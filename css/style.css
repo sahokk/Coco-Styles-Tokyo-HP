@@ -411,6 +411,47 @@ footer a {
     /*上下、左右への余白*/
 }
 
+#slider {
+    width: 100%;
+    height: 300px;
+    /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+a {
+    color: #fff;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+h1.over{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 6vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.container {
+    background: #555;
+}
+
+.container p {
+    padding: 300px 0;
+    text-align: center;
+    color: #fff;
+}
+
 /* その他 */
 .c {
     text-align: center !important;
