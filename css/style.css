@@ -201,8 +201,8 @@ main h2 {
 /*h2タグ内のspanタグ。小文字部分。*/
 main h2 span {
     display: block;
-    font-size: 0.5rem;
-    /*文字サイズを親要素の半分に*/
+    font-size: 0.7rem;
+    /*文字サイズを親要素の0.7に*/
     letter-spacing: 0.5em;
     /*文字間隔の上書き*/
     text-indent: 0.5em;
@@ -289,7 +289,7 @@ p+h2 {
     left: 50%;
     width: 2rem;
     height: 2px;
-    background-color: black;
+    background-color: #555;
     transform: translateX(-50%);
 }
 
