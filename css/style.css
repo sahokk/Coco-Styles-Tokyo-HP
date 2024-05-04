@@ -101,6 +101,19 @@ ol {
 	margin-bottom: 30px;
 }
 
+ol {
+	position: relative;
+	padding: 0 10px 0 6px;
+	list-style: none;
+	font-weight: bold;
+}
+ol li {
+	position: relative;
+	margin: 12px 20px 0 24px;
+	padding: 0;
+	line-height: 1.5;
+}
+
 /*他*/
 section + section {
 	margin-top: 100px;
@@ -125,6 +138,8 @@ a:hover {
 	margin: 0 auto;
 	max-width: 1800px;
 	/*サイトの最大幅*/
+}
+#contents {
 }
 
 /*header（ロゴが入った最上段のブロック）
@@ -202,6 +217,87 @@ main h2 span {
 	/*文字間隔の上書き*/
 	text-indent: 0.5em;
 	/*上の行のletter-spacingと同じ値をセットする*/
+}
+
+details.menu_list {
+	margin: 20px 0px;
+	display: block;
+	text-align: center;
+	list-style: none;
+	background-color: #fffaf0;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 2px #d6c6af;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+summary.menu_title {
+	font-weight: bold;
+	/*太さを標準に*/
+	font-size: 15px;
+	letter-spacing: 0.1em;
+	/*文字間隔を広くとる*/
+	text-indent: 0.2em;
+	/*上の行のletter-spacingと同じ値をセットする*/
+	text-align: left;
+	padding-left: 10px;
+	list-style: none;
+}
+
+summary div.menu_items {
+	font-size: 15px;
+	width: 90%;
+	margin: 10px 5px;
+	float: none;
+	position: relative;
+	display: block;
+}
+
+hr.hr1 {
+	border-width: 3px 0 0 0;
+	border-style: dashed;
+	border-color: #ffc36f;
+	width: 80%;
+	margin-bottom: 15px;
+}
+
+ol.menu_details {
+	counter-reset: li;
+}
+
+ol.menu_details > li.menu_details_title {
+	font-weight: bold;
+	/*太さを標準に*/
+	font-size: 1.1rem;
+	/*文字サイズを1.1倍に*/
+
+	text-align: center;
+	/*テキストをセンタリング*/
+	padding-bottom: 5px;
+}
+
+.menu_details_content {
+	font-weight: normal;
+	/*太さを標準に*/
+	font-size: 10px;
+	text-indent: 0.2em;
+	/*上の行のletter-spacingと同じ値をセットする*/
+	text-align: center;
+	/*テキストをセンタリング*/
+	padding: 0 auto;
+}
+
+span.menu_items_tag {
+	font-weight: normal;
+	background-color: #8fbc8f;
+	border-radius: 20px;
+	padding: 1px 8px;
+}
+span.underline {
+	text-decoration: underline #555;
+}
+span.color_change {
+	color: #ffc36f;
 }
 
 a.btn--yoyakupage {
