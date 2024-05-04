@@ -300,6 +300,11 @@ span.color_change {
 	color: #ffc36f;
 }
 
+iframe.yoyaku--page {
+	display: block;
+	height: 50rem;
+}
+
 a.btn--yoyakupage {
 	display: block;
 	text-align: center;
@@ -495,7 +500,7 @@ footer a {
 /* footer */
 #footer_top {
 	margin: 0;
-	padding: 1%;
+	padding: 5%;
 	padding-bottom: 0%;
 	/*ブロック内の余白*/
 }
@@ -503,7 +508,7 @@ footer a {
 #footer_social_link li {
 	display: inline-block;
 	/*横並びにする*/
-	padding: 0 10px;
+	padding: 10px;
 	/*上下、左右への余白*/
 }
 
@@ -519,6 +524,46 @@ footer a {
 	/*横並びにする*/
 	padding: 0 10px;
 	/*上下、左右への余白*/
+}
+
+.flowbtn3 {
+	font-family: "Noto Sans Japaneses", sans-serif; /* フォント指定 */
+	position: relative;
+	display: inline-block;
+	width: 40px; /* 背景横幅 */
+	height: 40px; /* 背景高さ */
+	font-size: 30px;
+	border-radius: 13px; /* ボタンの角を丸く */
+	transition: 0.5s;
+	text-decoration: none;
+	color: #fff; /* アイコンカラー */
+	margin-bottom: 10px; /* ボタン下の余白 */
+}
+
+/* アイコンの位置を真ん中へ */
+.flowbtn3 i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.flowbtn3:hover {
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	transform: translateY(-5px);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.my_instagram1 {
+	font-size: 30px;
+}
+
+.my_line1 {
+	font-size: 25px;
 }
 
 #slider {
