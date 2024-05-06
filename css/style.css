@@ -263,7 +263,7 @@ ol.menu_details {
 	counter-reset: li;
 }
 
-ol.menu_details > li.menu_details_title {
+li.menu_details_title {
 	font-weight: bold;
 	/*太さを標準に*/
 	font-size: 1.1rem;
