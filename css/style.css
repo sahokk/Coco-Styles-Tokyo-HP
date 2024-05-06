@@ -227,8 +227,6 @@ details.menu_list {
 	background-color: #fffaf0;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px 2px #d6c6af;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 summary.menu_title {
@@ -240,7 +238,7 @@ summary.menu_title {
 	text-indent: 0.2em;
 	/*上の行のletter-spacingと同じ値をセットする*/
 	text-align: left;
-	padding-left: 10px;
+	padding: 20px 10px;
 	list-style: none;
 }
 
