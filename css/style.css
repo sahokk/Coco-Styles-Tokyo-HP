@@ -50,7 +50,7 @@ body {
 		"HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 	/*フォント種類*/
 	-webkit-text-size-adjust: none;
-	background: #fffaf0;
+	background: #fff;
 	/*背景色*/
 	color: #777;
 	/*文字色*/
@@ -153,7 +153,7 @@ a:hover {
 	left: 0;
 	right: 0;
 	width: 100%;
-	background-color: #fffaf0;
+	background-color: #fff;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -469,7 +469,7 @@ p + h2 {
 
 .drawer__nav__link {
 	display: block;
-	color: black;
+	color: #777;
 	text-decoration: none;
 	padding: 1rem 1rem;
 	border-bottom: solid 1px lightgray;

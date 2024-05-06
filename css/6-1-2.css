@@ -2,111 +2,169 @@
 スライダーのためのcss
 ===================================*/
 .slider {
-    position: relative;
-    z-index: 1;
-    /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
-    height: 100vh;
-    /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+	margin: 30px 0;
+	position: relative;
+	z-index: 1;
+	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+}
+
+.slider-2 {
+	margin: 30px 0;
+	position: relative;
+	z-index: 1;
+	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
 }
 
 .msg {
-    font-size: 18px;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* text-shadow: 2px 2px 3px #555, -1px -1px 3px #555; */
-    text-align: center;
+	font-size: 18px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* text-shadow: 2px 2px 3px #555, -1px -1px 3px #555; */
+	text-align: center;
 }
 
 /*　背景画像設定　*/
 
 .slider-item01 {
-    background: url(../images/miku5.jpg);
+	background: url(../images/miku5.jpg);
 }
 
 .slider-item02 {
-    background: url(../images/miku6.jpg);
+	background: url(../images/miku6.jpg);
 }
 
 .slider-item03 {
-    background: url(../images/miku7.jpg);
+	background: url(../images/miku7.jpg);
+}
+
+.slider-item04 {
+	background: url(../images/IMG_1340.JPG.jpg);
+}
+
+.slider-item05 {
+	background: url(../images/IMG_1341.JPG.jpg);
+}
+
+.slider-item06 {
+	background: url(../images/IMG_1342.JPG.jpg);
+}
+
+.slider-item07 {
+	background: url(../images/IMG_1339.JPG.jpg);
+}
+
+.slider-item08 {
+	background: url(../images/IMG_1335.JPG.jpg);
+}
+
+.slider-item09 {
+	background: url(../images/IMG_1338.JPG.jpg);
+}
+
+.slider-item10 {
+	background: url(../images/IMG_1336.JPG.jpg);
+}
+
+.slider-item11 {
+	background: url(../images/IMG_1337.JPG.jpg);
 }
 
 .slider-item {
-    width: 100%;
-    /*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
-    height: 300px;
-    /*各スライダー全体の縦幅を300pxにする*/
-    background-repeat: no-repeat;
-    /*背景画像をリピートしない*/
-    background-position: center;
-    /*背景画像の位置を中央に*/
-    background-size: cover;
-    /*背景画像が.slider-item全体を覆い表示*/
+	width: 100%;
+	/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+	height: 300px;
+	/*各スライダー全体の縦幅を300pxにする*/
+	background-repeat: no-repeat;
+	/*背景画像をリピートしない*/
+	background-position: center;
+	/*背景画像の位置を中央に*/
+	background-size: cover;
+	/*背景画像が.slider-item全体を覆い表示*/
+	/* animation: animationZoom 10s ease-in-out forwards; */
+}
+
+@keyframes animationZoom {
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+.slider-item-2 {
+	width: 100%;
+	/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+	aspect-ratio: 4/5;
+	/*各スライダー全体の縦幅を300pxにする*/
+	background-repeat: no-repeat;
+	/*背景画像をリピートしない*/
+	background-position: center;
+	/*背景画像の位置を中央に*/
+	background-size: cover;
+	/*背景画像が.slider-item全体を覆い表示*/
 }
 
 /*矢印の設定*/
 
 .slick-prev,
 .slick-next {
-    position: absolute;
-    z-index: 3;
-    top: 42%;
-    cursor: pointer;
-    /*マウスカーソルを指マークに*/
-    outline: none;
-    /*クリックをしたら出てくる枠線を消す*/
-    border-top: 2px solid #fff;
-    /*矢印の色*/
-    border-right: 2px solid #fff;
-    /*矢印の色*/
-    height: 25px;
-    width: 25px;
+	position: absolute;
+	z-index: 3;
+	top: 30%;
+	cursor: pointer;
+	/*マウスカーソルを指マークに*/
+	outline: none;
+	/*クリックをしたら出てくる枠線を消す*/
+	border-top: 2px solid #333;
+	/*矢印の色*/
+	border-right: 2px solid #333;
+	/*矢印の色*/
+	height: 20px;
+	width: 20px;
 }
 
 .slick-prev {
-    /*戻る矢印の位置と形状*/
-    left: 2.5%;
-    transform: rotate(-135deg);
+	/*戻る矢印の位置と形状*/
+	left: 2.5%;
+	transform: rotate(-135deg);
 }
 
 .slick-next {
-    /*次へ矢印の位置と形状*/
-    right: 2.5%;
-    transform: rotate(45deg);
+	/*次へ矢印の位置と形状*/
+	right: 2.5%;
+	transform: rotate(45deg);
 }
 
 /*ドットナビゲーションの設定*/
 
 .slick-dots {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    margin: -50px 0 0 0;
-    /*ドットの位置*/
+	position: relative;
+	z-index: 3;
+	text-align: center;
+	margin: -30px 0 0 0;
+	/*ドットの位置*/
 }
 
 .slick-dots li {
-    display: inline-block;
-    margin: 0 5px;
+	display: inline-block;
+	margin: 0 5px;
 }
 
 .slick-dots button {
-    color: transparent;
-    outline: none;
-    width: 8px;
-    /*ドットボタンのサイズ*/
-    height: 8px;
-    /*ドットボタンのサイズ*/
-    display: block;
-    border-radius: 50%;
-    background: #fff;
-    /*ドットボタンの色*/
+	color: transparent;
+	outline: none;
+	width: 8px;
+	/*ドットボタンのサイズ*/
+	height: 8px;
+	/*ドットボタンのサイズ*/
+	display: block;
+	border-radius: 50%;
+	background: #dddddd;
+	/*ドットボタンの色*/
 }
 
 .slick-dots .slick-active button {
-    background: #333;
-    /*ドットボタンの現在地表示の色*/
+	background: #333;
+	/*ドットボタンの現在地表示の色*/
 }
