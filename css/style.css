@@ -287,7 +287,7 @@ input[type="checkbox"]:checked + .overlay {
 hr.hr1 {
 	border-width: 3px 0 0 0;
 	border-style: dashed;
-	border-color: #dbc5a7;
+	border-color: #d6c6af;
 	width: 80%;
 	margin-bottom: 15px;
 }
@@ -329,7 +329,7 @@ span.underline {
 	text-decoration: underline #555;
 }
 span.color_change {
-	color: #dbc5a7;
+	color: #d6c6af;
 }
 
 iframe.yoyaku--page {
