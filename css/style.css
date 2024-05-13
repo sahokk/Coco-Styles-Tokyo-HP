@@ -222,13 +222,13 @@ main h2 span {
 .open {
 	cursor: pointer;
 }
-#pop-up {
+input[type="checkbox"] {
 	display: none;
 }
 .overlay {
 	display: none;
 }
-#pop-up:checked + .overlay {
+input[type="checkbox"]:checked + .overlay {
 	display: block;
 	position: fixed;
 	width: 100%;
