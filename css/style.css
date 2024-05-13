@@ -245,7 +245,7 @@ main h2 span {
 	left: 50%;
 	width: 90%;
 	height: 80%;
-	padding: 10px;
+	padding: 5px;
 	background-color: #fff;
 	border-radius: 4px;
 	align-items: center;
@@ -253,8 +253,10 @@ main h2 span {
 }
 .close {
 	position: absolute;
-	top: 4px;
-	right: 4px;
+	font-size: 12px;
+	margin: 4px;
+	top: 6px;
+	right: 10px;
 	cursor: pointer;
 }
 
@@ -276,30 +278,23 @@ main h2 span {
 	/*文字間隔を広くとる*/
 	text-indent: 0.2em;
 	/*上の行のletter-spacingと同じ値をセットする*/
-	text-align: left;
-	padding: 20px 10px;
+	text-align: center;
+	margin: 10px;
+	padding-top: 30px;
 	list-style: none;
-}
-
-.menu_items {
-	font-size: 15px;
-	width: 90%;
-	margin: 10px 5px;
-	float: none;
-	position: relative;
-	display: block;
 }
 
 hr.hr1 {
 	border-width: 3px 0 0 0;
 	border-style: dashed;
-	border-color: #ffc36f;
+	border-color: #dbc5a7;
 	width: 80%;
 	margin-bottom: 15px;
 }
 
 ol.menu_details {
 	counter-reset: li;
+	padding: 0;
 }
 
 li.menu_details_title {
@@ -325,8 +320,8 @@ li.menu_details_title {
 }
 
 span.menu_items_tag {
-	font-weight: normal;
-	background-color: #8fbc8f;
+	font-size: 13px;
+	background-color: #b9dac9;
 	border-radius: 20px;
 	padding: 1px 8px;
 }
@@ -334,7 +329,7 @@ span.underline {
 	text-decoration: underline #555;
 }
 span.color_change {
-	color: #ffc36f;
+	color: #dbc5a7;
 }
 
 iframe.yoyaku--page {
