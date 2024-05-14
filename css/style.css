@@ -221,13 +221,17 @@ main h2 span {
 
 .open {
 	cursor: pointer;
+	position: relative;
 }
+
 input[type="checkbox"] {
 	display: none;
 }
+
 .overlay {
 	display: none;
 }
+
 input[type="checkbox"]:checked + .overlay {
 	display: block;
 	position: fixed;
@@ -238,6 +242,7 @@ input[type="checkbox"]:checked + .overlay {
 	z-index: 9999;
 	background: rgba(0, 0, 0, 0.6);
 }
+
 .window {
 	overflow-y: scroll;
 	position: fixed;
@@ -251,6 +256,7 @@ input[type="checkbox"]:checked + .overlay {
 	align-items: center;
 	transform: translate(-50%, -50%);
 }
+
 .close {
 	position: absolute;
 	font-size: 12px;
@@ -261,13 +267,75 @@ input[type="checkbox"]:checked + .overlay {
 }
 
 .menu_list {
-	margin: 20px 0px;
+	margin: 10px;
+	display: block;
+	text-align: left;
+	list-style: none;
+	height: 80px;
+}
+
+h2.menu_list_title {
+	display: block;
+	font-size: 14px;
+	text-align: left;
+	margin: 0 0 5px 0;
+	width: 70%;
+}
+
+.br_sp {
+	display: none;
+}
+
+@media screen and (max-width: 530px) {
+	.br_sp {
+		display: block;
+	}
+
+	.menu_list {
+		height: auto;
+	}
+}
+
+.menu_list_items {
+	font-size: 10px;
+	text-align: left;
+	width: 70%;
+}
+
+.menu_list_items p {
+	margin: 0 0 0 10px;
+}
+
+.menu_list_price {
+	position: absolute;
+	right: 0;
+	top: 10%;
 	display: block;
 	text-align: center;
-	list-style: none;
-	background-color: #fffaf0;
-	border-radius: 5px;
-	box-shadow: 0px 0px 10px 2px #d6c6af;
+	font-weight: bold;
+}
+
+.menu_list_price .price_label {
+	color: #fff;
+	background-color: #fc4e4e;
+	font-size: 14px;
+	width: 100px;
+	height: 30px;
+	align-content: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+}
+
+.menu_list_price .price {
+	color: #fc4e4e;
+	font-size: 16px;
+	margin: 0;
+	width: 100px;
+	position: absolute;
+	right: 0;
+	top: 30px;
 }
 
 .menu_title {
@@ -290,6 +358,13 @@ hr.hr1 {
 	border-color: #d6c6af;
 	width: 80%;
 	margin-bottom: 15px;
+}
+
+hr.hr2 {
+	border-width: 1px 0 0 0;
+	border-style: dashed;
+	border-color: #818181;
+	width: 100%;
 }
 
 ol.menu_details {
@@ -318,12 +393,17 @@ li.menu_details_title {
 	/*テキストをセンタリング*/
 	padding: 0 auto;
 }
+div.menu_items {
+	display: block;
+	text-align: center;
+}
 
 span.menu_items_tag {
 	font-size: 13px;
 	background-color: #b9dac9;
 	border-radius: 20px;
 	padding: 1px 8px;
+	text-align: center;
 }
 span.underline {
 	text-decoration: underline #555;
